@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="mt-5">
+    
+    <legend class="my-2">Step1</legend>
+    
+    @for (int i = 1; i < 3; i++)
+    {
+        <a asp-page="/FileManger/Step1/CD@(i)">CD@(i)</a>
+        <br/>
+    }
+    <legend class="my-2">Step2</legend>
+    @for (int i = 1; i < 5; i++)
+    {
+        <a asp-page="/FileManger/Step2/CD@(i)">CD@(i)</a>
+        <br/>
+    }
+</div>

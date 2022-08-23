@@ -1,0 +1,21 @@
+﻿@page
+@model CD1Model
+@{
+}
+
+<form method="post">
+    <div class="row">
+        <div class="col-12 p-3 col-md-8 p-md-5 bg-light border border-2 rounded-3 shadow-lg offset-md-2">
+            <legend>
+                Create Directory
+            </legend>
+            <hr/>
+            <div class="mb-3">
+                <label for="directoryName" class="form-label">Directory Name</label>
+                <input type="text" id="directoryName" name="directoryName" class="form-control" aria-label="directory"/>
+            </div>
+            <button  type="submit" class="btn btn-primary">Create</button>
+            <button  type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+    </div>
+</form>
